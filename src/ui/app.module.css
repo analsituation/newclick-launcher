@@ -1,0 +1,23 @@
+.app {
+  padding: 40px 20px;
+  margin: 0;
+}
+
+.checkboxBlock {
+  width: 600px;
+
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.infoBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spinner {
+  display: block;
+}

@@ -1,0 +1,41 @@
+{
+  "name": "newclick-launcher",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start:server": "node --loader ts-node/esm src/server/index.ts",
+    "start:client": "vite",
+    "start": "concurrently -k -n SERVER,CLIENT -c yellow,cyan \"npm run start:server\" \"npm run start:client\"",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@alfalab/core-components": "^48.27.3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tree-kill": "^1.2.2",
+    "ws": "^8.18.2"
+  },
+  "bin": {
+    "cli": "./src/cli/index.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react-swc": "^3.9.0",
+    "concurrently": "^9.1.2",
+    "globals": "^16.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+  }
+}
