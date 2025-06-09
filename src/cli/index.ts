@@ -12,7 +12,7 @@ const [command, ...rest] = args;
 switch (command) {
   case "greet": {
     const nameArg = rest.find((arg) => arg.startsWith("--name="));
-    const name = nameArg ? nameArg.split("=")[1] : "boba";
+    const name = nameArg ? nameArg.split("=")[1] : "ooo";
     greet(name);
     break;
   }
@@ -20,6 +20,6 @@ switch (command) {
   case "help":
   default:
     console.log(`
-      amogus
+      aaa
     `);
 }

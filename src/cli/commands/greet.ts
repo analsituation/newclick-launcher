@@ -1,3 +1,3 @@
 export function greet(name: string) {
-  console.log(`aboba ${name}`);
+  console.log(`eee ${name}`);
 }

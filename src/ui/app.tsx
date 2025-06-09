@@ -21,9 +21,6 @@ export default function App() {
   const [selected, setSelected] = useState<SelectedRepository[]>([]);
   const [running, setRunning] = useState<RunningProcess[]>([]);
 
-  console.log("selected", selected);
-  console.log("running", running);
-
   const updateFunction = useCallback(
     (data: RunningProcesses) => {
       const repos = Object.keys(data).map((repoName) => data[repoName]);
