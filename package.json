@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@alfalab/core-components": "^48.27.3",
+    "@alfalab/core-config": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "react": "^19.1.0",
